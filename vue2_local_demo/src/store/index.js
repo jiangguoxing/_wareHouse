@@ -10,7 +10,7 @@ const state = {
     },
     menuInfo: [{
         "id": 2,
-        "name": "数据管理",
+        "name": "数据管理-",
         "class": "el-icon-document",
         "children": [
             { "id": "userList", "name": "用户列表", "class": "" },

@@ -2,7 +2,7 @@
 	<div class="manage_page fillcontain">
 		<el-row style="height: 100%;">
 	  		<el-col :span="4"  style="min-height: 100%; background-color: #324057;">
-				<el-menu :default-active="defaultActive" style="min-height: 100%;" theme="dark" router>
+				<!--el-menu :default-active="defaultActive" style="min-height: 100%;" theme="dark" router>
 					<el-menu-item index="manage"><i class="el-icon-menu"></i>首页</el-menu-item>
 					<el-submenu index="2">
 						<template slot="title"><i class="el-icon-document"></i>数据管理</template>
@@ -35,11 +35,11 @@
 					<el-submenu index="7">
 						<template slot="title"><i class="el-icon-warning"></i>说明</template>
 						<el-menu-item index="explain">说明</el-menu-item>
-					</el-submenu>
-					<!--el-submenu v-bind:index="menu.id" v-for="(menu, index) in menuInfo">
+					</el-submenu-->
+					<el-submenu v-bind:index="menu.id" v-for="(menu, index) in menuInfo">
                         <template slot="title"><i v-bind:class="menu.class"></i>{{menu.name}}</template>
 						<el-menu-item v-bind:index="childMenu.id" v-for="(childMenu, index) in menu.children">{{childMenu.name}}</el-menu-item>
-					</el-submenu-->
+					</el-submenu>
 				</el-menu>
 			</el-col>
 			<el-col :span="20" style="height: 100%;overflow: auto;">
